@@ -39,3 +39,28 @@ Cypress.Commands.add("login", (username, password) => {
   
     cy.get("[data-test=login-button]").click();
   });
+
+  Cypress.Commands.add('removeProductFromCart', () => {
+    cy.get('.cart_item').first().find('.cart_button').click();
+  });
+  
+  Cypress.Commands.add('updateProductQuantity', (productName, quantity) => {
+    cy.get('.cart_item').contains(productName)
+      .parents('.cart_item')
+      .find('.cart_quantity_input')
+      .clear()
+      .type(quantity);
+  });
+  
+  Cypress.Commands.add('emptyCart', () => {
+    cy.get('.cart_item').each(($item) => {
+      cy.wrap($item).find('.cart_button').click();
+    });
+  });
+  
+  Cypress.Commands.add('proceedToCheckout', () => {
+    cy.get('[data-test="checkout"]').click();
+  });
+   
+
+
