@@ -1,7 +1,7 @@
 # Trabajo Final - QA Automatización Santex
 
 ## Descripción
-Este proyecto corresponde al trabajo final del curso de **QA Automatización** brindado por Santex. Consiste en la automatización de pruebas funcionales utilizando **Cypress** para validar la calidad de la aplicación web [**Saucedemo**](https://www.saucedemo.com). El objetivo principal es verificar la funcionalidad de los módulos principales del sitio, como login, compras y pagos con diferentes roles.
+Este proyecto corresponde al trabajo final del curso de **QA Automatización** brindado por Santex. Consiste en la automatización de pruebas funcionales utilizando **Cypress** para validar la funcionaliadad de la aplicación web [**Saucedemo**](https://www.saucedemo.com). Se pretende verificar la funcionalidad de los módulos principales del sitio, como login, compras y pagos con diferentes roles.
 
 ## Objetivo
 El objetivo del proyecto es implementar pruebas automatizadas que permitan consolidar los conocimientos adquiridos a lo largo del curso. Para ello se automatizará:
